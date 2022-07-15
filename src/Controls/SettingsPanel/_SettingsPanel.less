@@ -1,0 +1,82 @@
+.SettingsPanel {
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 320px;
+}
+
+.SettingsPanel__header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 12px;
+  border-radius: 12px 12px 0 0;
+  background-color: #d1eeff;
+}
+
+.SettingsPanel__action {
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  &.reset {
+    margin-right: 18px;
+    background: url('../../assets/reset.png') 50% 50% no-repeat;
+    background-size: contain;
+  }
+  &.close {
+    background: url('../../assets/close.png') 50% 50% no-repeat;
+    background-size: contain;
+  }
+}
+
+.SettingsPanel__body {
+  padding: 12px;
+  background-color: var(--bgColor);
+  border-radius: 0 0 12px 12px;
+}
+
+.SettingsPanel__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  margin-bottom: 6px;
+  border: 1px solid var(--borderColor);
+  border-radius: 12px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--bgSecondColor);
+  }
+}
+
+.SettingsPanel__preview {
+  width: 36px;
+  height: 36px;
+  margin-right: 6px;
+  border-radius: 6px;
+  border: 1px solid var(--borderColor);
+}
+
+.SettingsPanel__title {
+  color: var(--titleColor);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.SettingsPanel__desc {
+  font-size: 14px;
+  color: var(--textColor);
+}
+
+.SettingsPanel__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
